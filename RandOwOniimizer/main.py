@@ -3,7 +3,7 @@ import json
 import random
 
 filedialog
-archivoExport = filedialog.askopenfilename(initialdir = "/",title = "Select file",filetypes = (("json files","*.json"),("all files","*.*")))
+archivoExport = filedialog.askopenfilename(initialdir = "C:/Users/User/Documents/プログラミング/PythOwOnProyects/RandOwOniimizer",title = "Select file",filetypes = (("json files","*.json"),("all files","*.*")))
 
 with open(archivoExport, 'r', encoding='utf-8') as f:
     jsonData = json.load(f)

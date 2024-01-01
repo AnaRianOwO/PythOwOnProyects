@@ -24,13 +24,12 @@ while i=="yes" or i=="si":
         mensaje=input()
         codificacion()
     elif owo==2:
-        print(" Escribir mensaje para decodificar uwu")
+        print("Escribir mensaje para decodificar uwu")
         mensaje=input()
         decodificacion()
     else:
         print("No mis amores uwu, revisen bien las opciones")
 
-    print("Seguimos uwu?")
+    print("\nSeguimos uwu?")
     i=input()
 
-print("s")
