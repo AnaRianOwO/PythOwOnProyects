@@ -13,8 +13,9 @@ def randomizer(archivos):
         carpet = archivo
         archivos = os.listdir(carpet)
         archivo = random.choice(archivos)
-        print(archivo)
         archivo = carpet + "\\" + archivo
+        if os.path.isdir(archivo) == True:
+            subprocess.run("explorer " + archivo, shell=True)
     subprocess.run(archivo, shell=True)
 
 while True:
