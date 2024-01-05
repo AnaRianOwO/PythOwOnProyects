@@ -23,3 +23,5 @@ while True:
     input = input("Presiona enter para seleccionar otro archivo random, oprime 0 para salir\n")
     if input == "0":
         exit()
+    else:
+        continue
