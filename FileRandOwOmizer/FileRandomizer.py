@@ -20,10 +20,6 @@ def randomizer(archivos):
  
 while True:
     randomizer(archivos)
-    input("Presiona enter para seleccionar otro archivo random, oprime 1 para escoger otra carpeta, oprime 0 para salir\n")
-    if input == "1":
-        carpeta = filedialog.askdirectory(title="Selecciona la carpeta a seleccionar un archivo random")
-        archivos = os.listdir(carpeta)
-        randomizer(archivos)
+    input = input("Presiona enter para seleccionar otro archivo random, oprime 0 para salir\n")
     if input == "0":
         exit()
