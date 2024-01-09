@@ -18,10 +18,11 @@ def randomizer(archivos):
             subprocess.run("explorer " + archivo, shell=True)
     subprocess.run(archivo, shell=True)
  
-while True:
+def menu():
     randomizer(archivos)
-    input = input("Presiona enter para seleccionar otro archivo random, oprime 0 para salir\n")
-    if input == "0":
+    opcion = input("Presiona enter para seleccionar otro archivo random, oprime 0 para salir\n")
+    if opcion == "0":
         exit()
-    else:
-        continue
+    
+while True:
+    menu()
